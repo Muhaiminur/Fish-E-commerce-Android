@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.Wholesale_Auction">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_white">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/auction_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="52dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:scrollbars="horizontal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/auction_pager"
+            android:layout_marginBottom="52dp"
+            android:background="@drawable/drop_shadow_inverse" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/app_blue">
+
+            <RelativeLayout
+                android:id="@+id/rl_cart"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp">
+
+                <!-- Menu Item Image -->
+                <ImageView
+                    android:id="@+id/wholesaleauc_cart"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="@string/zero_string"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_cart" />
+
+                <!-- Badge Count -->
+                <TextView
+                    android:id="@+id/wholesaleauc_textview"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/round_white"
+                    android:gravity="center"
+                    android:text="@string/zero_string"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/small" />
+
+            </RelativeLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.Fragment_Upload_Step1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="5dp"
+                app:contentPadding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <fr.ganfra.materialspinner.MaterialSpinner
+                        android:id="@+id/select_fish"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:textAlignment="textStart"
+                        app:ms_arrowColor="@color/app_blue"
+                        app:ms_baseColor="@color/app_blue"
+                        app:ms_enableErrorLabel="false"
+                        app:ms_enableFloatingLabel="false"
+                        app:ms_floatingLabelColor="@color/app_blue"
+                        app:ms_floatingLabelText="@string/step1_fish_string"
+                        app:ms_hint="@string/step1_fish_string"
+                        app:ms_hintColor="@color/app_hint"
+                        app:ms_multiline="false" />
+
+                    <EditText
+                        android:id="@+id/fish_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/rectangular_border_blue"
+                        android:elevation="8dp"
+                        android:hint="@string/step1_description_string"
+                        android:inputType="textLongMessage"
+                        android:maxLines="1"
+                        android:paddingStart="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="5dp"
+                        android:textAlignment="textStart"
+                        android:textColorHint="@color/app_hint" />
+
+                    <fr.ganfra.materialspinner.MaterialSpinner
+                        android:id="@+id/fish_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:textAlignment="textStart"
+                        app:ms_arrowColor="@color/app_blue"
+                        app:ms_baseColor="@color/app_blue"
+                        app:ms_enableErrorLabel="false"
+                        app:ms_enableFloatingLabel="false"
+                        app:ms_floatingLabelColor="@color/app_blue"
+                        app:ms_floatingLabelText="@string/step1_category_string"
+                        app:ms_hint="@string/step1_category_string"
+                        app:ms_hintColor="@color/app_hint"
+                        app:ms_multiline="false" />
+
+                    <EditText
+                        android:id="@+id/fish_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/rectangular_border_blue"
+                        android:elevation="8dp"
+                        android:hint="@string/step1_price_string"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:paddingStart="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="5dp"
+                        android:textAlignment="textStart"
+                        android:textColorHint="@color/app_hint" />
+
+                    <EditText
+                        android:id="@+id/fish_quantity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/rectangular_border_blue"
+                        android:elevation="8dp"
+                        android:hint="@string/step1_quantity_string"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:paddingStart="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="5dp"
+                        android:textAlignment="textStart"
+                        android:textColorHint="@color/app_hint" />
+
+                    <EditText
+                        android:id="@+id/fish_minimum_quantity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/rectangular_border_blue"
+                        android:elevation="8dp"
+                        android:hint="@string/step1_minimum_quantity_string"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:paddingStart="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="5dp"
+                        android:textAlignment="textStart"
+                        android:textColorHint="@color/app_hint" />
+
+                    <fr.ganfra.materialspinner.MaterialSpinner
+                        android:id="@+id/fish_division"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:textAlignment="textStart"
+                        app:ms_arrowColor="@color/app_blue"
+                        app:ms_baseColor="@color/app_blue"
+                        app:ms_enableErrorLabel="false"
+                        app:ms_enableFloatingLabel="false"
+                        app:ms_floatingLabelColor="@color/app_blue"
+                        app:ms_floatingLabelText="@string/cart_division_string"
+                        app:ms_hint="@string/cart_division_string"
+                        app:ms_hintColor="@color/app_hint"
+                        app:ms_multiline="false"/>
+                    <fr.ganfra.materialspinner.MaterialSpinner
+                        android:id="@+id/fish_zilla"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:textAlignment="textStart"
+                        app:ms_arrowColor="@color/app_blue"
+                        app:ms_baseColor="@color/app_blue"
+                        app:ms_enableErrorLabel="false"
+                        app:ms_enableFloatingLabel="false"
+                        app:ms_floatingLabelColor="@color/app_blue"
+                        app:ms_floatingLabelText="@string/cart_zilla_string"
+                        app:ms_hint="@string/cart_zilla_string"
+                        app:ms_hintColor="@color/app_hint"
+                        app:ms_multiline="false"/>
+
+                    <fr.ganfra.materialspinner.MaterialSpinner
+                        android:id="@+id/fish_upozilla"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:textAlignment="textStart"
+                        app:ms_arrowColor="@color/app_blue"
+                        app:ms_baseColor="@color/app_blue"
+                        app:ms_enableErrorLabel="false"
+                        app:ms_enableFloatingLabel="false"
+                        app:ms_floatingLabelColor="@color/app_blue"
+                        app:ms_floatingLabelText="@string/step1_upozila_string"
+                        app:ms_hint="@string/step1_upozila_string"
+                        app:ms_hintColor="@color/app_hint"
+                        app:ms_multiline="false"/>
+
+                    <TextView
+                        android:id="@+id/fish_sell_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="20dp"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:text="@string/step1_sell_type_string"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/app_hint" />
+
+                    <RadioGroup
+                        android:id="@+id/fish_sell_type_cat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal"
+                        android:paddingStart="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="5dp"
+                        android:weightSum="2">
+
+                        <RadioButton
+                            android:id="@+id/fish_sell_retail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:text="@string/homepage_retail_string" />
+
+                        <RadioButton
+                            android:id="@+id/fish_sell_wholesell"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="false"
+                            android:text="@string/homepage_wholesale_string" />
+
+                        <!--<RadioButton
+                            android:id="@+id/fish_sell_both"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="false"
+                            android:text="@string/user_both_string"
+                            android:visibility="invisible"/>-->
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/fish_frozen_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="20dp"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:text="@string/step1_frozen_string"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/app_hint" />
+
+                    <RadioGroup
+                        android:id="@+id/fish_frozen_grp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal"
+                        android:paddingStart="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="5dp"
+                        android:weightSum="2">
+
+                        <RadioButton
+                            android:id="@+id/fish_frozen_yes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:text="@string/yes_string" />
+
+                        <RadioButton
+                            android:id="@+id/fish_frozen_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="false"
+                            android:text="@string/no_string" />
+                        <!--<RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="false"
+                            android:text="@string/no_string"
+                            android:visibility="invisible"/>-->
+                    </RadioGroup>
+
+                    <Button
+                        android:id="@+id/upload_next1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_gravity="end"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/rectangular_blue_white"
+                        android:text="@string/next_string"
+                        android:textAlignment="center"
+                        android:textColor="@color/app_white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!--<Button
+        android:id="@+id/upload_next1"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@color/app_blue"
+        android:padding="5dp"
+        android:text="@string/next_string"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/extra_large" />-->
+
+</RelativeLayout>

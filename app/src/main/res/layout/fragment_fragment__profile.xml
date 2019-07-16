@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_white"
+    tools:context=".Fragment.Fragment_Profile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_white">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.mikhaellopez.circularimageview.CircularImageView
+                                android:id="@+id/user_profile_image"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="50dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="50dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="5dp"
+                                android:src="@drawable/ic_fish"
+                                app:civ_border_color="@color/app_blue"
+                                app:civ_border_width="4dp" />
+
+                            <Button
+                                android:id="@+id/profile_image_edit"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_gravity="end"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/ic_edit_icon"
+                                android:padding="5dp" />
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/profile_cardview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp"
+                        app:cardMaxElevation="5dp"
+                        app:contentPadding="5dp">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:orientation="horizontal"
+                                    android:weightSum="4">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:gravity="start"
+                                        android:paddingStart="10dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingEnd="10dp"
+                                        android:paddingBottom="5dp"
+                                        android:text="@string/profile_name_string"
+                                        android:textColor="@color/app_hint" />
+
+                                    <TextView
+                                        android:id="@+id/profile_name"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="start"
+                                        android:paddingStart="10dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingEnd="10dp"
+                                        android:paddingBottom="5dp"
+                                        android:text="@string/profile_name_string"
+                                        android:textAlignment="textStart"
+                                        android:textColor="@color/app_blue" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:orientation="horizontal"
+                                    android:weightSum="4">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:gravity="start"
+                                        android:paddingStart="10dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingEnd="10dp"
+                                        android:paddingBottom="5dp"
+                                        android:text="@string/profile_email_string"
+                                        android:textColor="@color/app_hint" />
+
+                                    <TextView
+                                        android:id="@+id/profile_email"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="start"
+                                        android:paddingStart="10dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingEnd="10dp"
+                                        android:paddingBottom="5dp"
+                                        android:text="@string/profile_email_string"
+                                        android:textAlignment="textStart"
+                                        android:textColor="@color/app_blue" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:weightSum="4">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:gravity="start"
+                                        android:paddingStart="10dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingEnd="10dp"
+                                        android:paddingBottom="5dp"
+                                        android:text="@string/profile_phone_string"
+                                        android:textColor="@color/app_hint" />
+
+                                    <TextView
+                                        android:id="@+id/profile_mobile"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="start"
+                                        android:paddingStart="10dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingEnd="10dp"
+                                        android:paddingBottom="5dp"
+                                        android:text="@string/profile_phone_string"
+                                        android:textAlignment="textStart"
+                                        android:textColor="@color/app_blue" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:weightSum="4">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:gravity="start"
+                                        android:paddingStart="10dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingEnd="10dp"
+                                        android:paddingBottom="5dp"
+                                        android:text="@string/profile_dob_string"
+                                        android:textColor="@color/app_hint" />
+
+                                    <TextView
+                                        android:id="@+id/profile_dob"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="start"
+                                        android:paddingStart="10dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingEnd="10dp"
+                                        android:paddingBottom="5dp"
+                                        android:text="@string/profile_dob_string"
+                                        android:textAlignment="textStart"
+                                        android:textColor="@color/app_blue" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:weightSum="4">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:gravity="start"
+                                        android:paddingStart="10dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingEnd="10dp"
+                                        android:paddingBottom="5dp"
+                                        android:text="@string/user_question_string"
+                                        android:textColor="@color/app_hint" />
+
+                                    <TextView
+                                        android:id="@+id/profile_sex"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="start|center"
+                                        android:paddingStart="10dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingEnd="10dp"
+                                        android:paddingBottom="5dp"
+                                        android:text="@string/profile_sex_string"
+                                        android:textAlignment="textStart"
+                                        android:textColor="@color/app_blue" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/profile_details_edit"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_gravity="end"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/ic_edit_icon"
+                                android:padding="5dp" />
+                        </FrameLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/product_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp"
+                        app:cardMaxElevation="5dp"
+                        app:contentPadding="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="30dp"
+                                    android:layout_marginEnd="30dp"
+                                    android:orientation="horizontal"
+                                    android:paddingStart="5dp"
+                                    android:paddingEnd="5dp"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:paddingStart="5dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingEnd="5dp"
+                                        android:paddingBottom="5dp"
+                                        android:text="@string/profile_product_string"
+                                        android:textAlignment="textStart"
+                                        android:textColor="@color/app_hint" />
+
+                                    <Button
+                                        android:id="@+id/profile_more_product"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:layout_gravity="end"
+                                        android:layout_weight="1"
+                                        android:background="@android:color/white"
+                                        android:text="@string/profile_mor_string"
+                                        android:textAlignment="textEnd"
+                                        android:textColor="@color/app_blue"
+                                        android:textSize="@dimen/extra_small" />
+                                </LinearLayout>
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/profile_recyclerview"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="30dp"
+                                    android:layout_marginEnd="30dp"
+                                    android:layout_marginBottom="52dp"
+                                    android:paddingStart="5dp"
+                                    android:paddingEnd="5dp"
+                                    android:scrollbars="none">
+
+                                </android.support.v7.widget.RecyclerView>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp"
+                        app:cardMaxElevation="5dp"
+                        app:contentPadding="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="30dp"
+                                    android:layout_marginEnd="30dp"
+                                    android:orientation="horizontal"
+                                    android:paddingStart="5dp"
+                                    android:paddingEnd="5dp"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:paddingStart="5dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingEnd="5dp"
+                                        android:paddingBottom="5dp"
+                                        android:text="@string/profile_address_string"
+                                        android:textAlignment="textStart"
+                                        android:textColor="@color/app_hint" />
+
+                                    <Button
+                                        android:id="@+id/profile_add_address"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:layout_gravity="end"
+                                        android:layout_weight="1"
+                                        android:background="@android:color/white"
+                                        android:text="@string/profile_add_mor_string"
+                                        android:textAlignment="textEnd"
+                                        android:textColor="@color/app_blue"
+                                        android:textSize="@dimen/extra_small" />
+                                </LinearLayout>
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/profile_address_recyclerview"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="30dp"
+                                    android:layout_marginEnd="30dp"
+                                    android:paddingStart="5dp"
+                                    android:paddingEnd="5dp"
+                                    android:scrollbars="none">
+
+                                </android.support.v7.widget.RecyclerView>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

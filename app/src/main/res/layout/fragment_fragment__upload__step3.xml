@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.Fragment_Upload_Step3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_margin="30dp">
+            <ImageView
+                android:id="@+id/video_preview"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:contentDescription="@string/menu_sell"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_default_background_banner" />
+            <ImageView
+                android:id="@+id/VideoPreviewPlayButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_play_button"
+                android:backgroundTint="@color/app_blue"/>
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/video_upload"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/ic_plus_round" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/step3_video_string"
+            android:textColor="@color/app_black" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/upload_next3"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="end"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/rectangular_blue_white"
+        android:text="@string/next_string"
+        android:textAlignment="center"
+        android:textColor="@color/app_white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

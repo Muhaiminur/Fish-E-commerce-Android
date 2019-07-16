@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gtechnologies.fishbangla">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:name=".APPLICATION.FISHBANGLA"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Activity.CAMERA_WORK"></activity>
+        <activity
+            android:name=".Activity.Search_Activity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Payment_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Buyer_Delivery_Address"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Cart_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Auction_Confirmation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Wholesale_Auction"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Fish_Upload_Product"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Profile_Product_List"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Seller_Profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Fish_Details"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Phone_Verification"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Home_page"
+            android:clearTaskOnLaunch="true"
+            android:label="@string/title_activity_home_page"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.Forget_Wait_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Forget_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Registraion"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.User_Category"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Splash_Activity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.MainActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.jmolsmobile.landscapevideocapture.VideoCaptureActivity"
+            android:screenOrientation="sensor" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_white"
+    android:orientation="vertical"
+    tools:context=".Activity.Fish_Details">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_white">
+
+        <ImageView
+            android:id="@+id/fish_details_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_default_background_banner" />
+
+        <ImageView
+            android:id="@+id/fish_details_add"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="end"
+            android:layout_margin="5dp"
+            android:background="@drawable/gradient_back"
+            android:padding="5dp"
+            android:src="@drawable/ic_plus_blue"
+            android:tint="@color/app_white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@drawable/gradient_back"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/fish_details_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:padding="2dp"
+                android:text="@string/fish_list_price_string"
+                android:textAlignment="center"
+                android:textColor="@color/app_white"
+                android:textSize="@dimen/extra_large"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/fish_details_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="3dp">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginRight="5dp"
+                    android:backgroundTint="@color/app_blue"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_user" />
+
+                <TextView
+                    android:id="@+id/fish_details_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="@string/menu_profile"
+                    android:textAlignment="center"
+                    android:textColor="@color/app_white"
+                    android:textSize="@dimen/large" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/fish_details_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:padding="2dp"
+                android:text="@string/fish_location_price"
+                android:textAlignment="center"
+                android:textColor="@color/app_white"
+                android:textSize="@dimen/extra_small" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/app_blue" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/fish_details_reference_string"
+        android:textColor="@color/app_blue"
+        android:textSize="@dimen/large" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_white">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fish_details_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="52dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:scrollbars="none">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <!--<GridView
+            android:id="@+id/fish_list_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="2"
+            android:paddingStart="20dp"
+            android:paddingEnd="30dp"
+            android:paddingBottom="60dp"
+            android:scrollbars="none" />-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/fish_details_recyclerview"
+            android:layout_marginBottom="52dp"
+            android:background="@drawable/drop_shadow_inverse" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/app_blue">
+
+            <RelativeLayout
+                android:id="@+id/rl_cart"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp">
+
+                <!-- Menu Item Image -->
+                <ImageView
+                    android:id="@+id/fishdetails_cart"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="@string/zero_string"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_cart" />
+
+                <!-- Badge Count -->
+                <TextView
+                    android:id="@+id/fishdetails_cart_textview"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/round_white"
+                    android:gravity="center"
+                    android:text="@string/zero_string"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/small" />
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

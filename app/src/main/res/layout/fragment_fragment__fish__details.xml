@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_white"
+    tools:context=".Fragment.Fragment_Fish_Details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_light_blue">
+
+            <ImageView
+                android:id="@+id/fish_details_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_default_background_banner" />
+
+            <Button
+                android:id="@+id/fish_details_add"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="end"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_plus_white"
+                android:padding="5dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/fish_details_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="15dp"
+                    android:padding="2dp"
+                    android:text="@string/fish_list_price_string"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/large" />
+
+                <TextView
+                    android:id="@+id/fish_details_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:padding="2dp"
+                    android:text="@string/fish_location_price"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/medium" />
+
+                <TextView
+                    android:id="@+id/fish_details_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:padding="2dp"
+                    android:text="@string/fish_category_price"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/extra_small" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/app_blue" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_white">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/fish_details_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="52dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:scrollbars="none">
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

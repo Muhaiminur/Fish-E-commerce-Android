@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#466289</color>
+    <color name="colorPrimaryDark">#466289</color>
+    <color name="colorAccent">#466289</color>
+    <color name="app_blue">#466289</color>
+    <color name="app_white">#f2f2f2</color>
+    <color name="app_black">#000000</color>
+    <color name="app_light_blue">#3adcef</color>\
+    <color name="app_blue2">#157490</color>
+    <color name="app_hint">#808080</color>
+</resources>

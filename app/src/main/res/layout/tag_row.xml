@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageButton
+        android:id="@+id/tag_row_button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/circular_retail_fish"
+        android:contentDescription="@string/homepage_retail_string" />
+
+    <View
+        android:layout_width="60dp"
+        android:layout_height="90dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="-25dp"
+        android:layout_toEndOf="@+id/tag_row_button"
+        android:background="@drawable/ic_waterdroprotate"></View>
+
+    <TextView
+        android:id="@+id/tag_row_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tag_row_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:padding="5dp"
+        android:text="@string/homepage_retail_string"
+        android:textAlignment="center"
+        android:textColor="@color/app_blue"
+        android:textSize="20sp" />
+</RelativeLayout>

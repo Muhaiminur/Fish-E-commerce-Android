@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_menu_avatar"
+        android:title=""
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/menu_profile"
+                android:icon="@drawable/ic_menu_avatar"
+                android:orderInCategory="100"
+                android:title="@string/menu_profile"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/menu_refere"
+                android:icon="@drawable/ic_menu_refer"
+                android:orderInCategory="100"
+                android:title="@string/menu_referel"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/menu_buy_history"
+                android:icon="@drawable/ic_buy_history"
+                android:orderInCategory="100"
+                android:title="@string/menu_buy_history"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/menu_sell_history"
+                android:icon="@drawable/ic_sell_history"
+                android:orderInCategory="100"
+                android:title="@string/menu_sell_history"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/menu_sell"
+                android:icon="@drawable/ic_menu_sell"
+                android:orderInCategory="100"
+                android:title="@string/menu_sell"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/menu_order"
+                android:icon="@drawable/ic_menu_order"
+                android:orderInCategory="100"
+                android:title="@string/menu_order"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/menu_logout"
+                android:icon="@drawable/ic_menu_logout"
+                android:orderInCategory="100"
+                android:title="@string/menu_logout"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+</menu>

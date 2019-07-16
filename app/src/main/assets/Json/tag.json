@@ -1,0 +1,50 @@
+[
+  {
+    "createdAt": "Apr 24, 2019 3:09:18 PM",
+    "name": "River",
+    "nameBn": "নদীর",
+    "id": 1,
+    "status": "active",
+    "updatedAt": "Apr 24, 2019 3:09:18 PM"
+  },
+  {
+    "createdAt": "Apr 24, 2019 3:09:24 PM",
+    "name": "Sea",
+    "nameBn": "সামুদ্রিক",
+    "id": 2,
+    "status": "active",
+    "updatedAt": "Apr 24, 2019 3:09:24 PM"
+  },
+  {
+    "createdAt": "Apr 24, 2019 3:09:30 PM",
+    "name": "Farm",
+    "nameBn": "চাষের",
+    "id": 3,
+    "status": "active",
+    "updatedAt": "Apr 24, 2019 3:09:30 PM"
+  },
+  {
+    "createdAt": "Apr 24, 2019 3:10:00 PM",
+    "name": "Lake",
+    "nameBn": "হাওড় ও বিলের",
+    "id": 4,
+    "status": "active",
+    "updatedAt": "Apr 24, 2019 3:10:00 PM"
+  },
+  {
+    "createdAt": "Apr 24, 2019 3:10:06 PM",
+    "name": "Canal",
+    "nameBn": "খালের",
+    "id": 5,
+    "status": "active",
+    "updatedAt": "Apr 24, 2019 3:10:06 PM"
+  },
+  {
+    "createdAt": "Apr 24, 2019 5:08:26 PM",
+    "name": "Test ",
+    "nameBn": "বাংলা ",
+    "id": 6,
+    "status": "active",
+    "updatedAt": "Apr 24, 2019 5:08:26 PM"
+  }
+]

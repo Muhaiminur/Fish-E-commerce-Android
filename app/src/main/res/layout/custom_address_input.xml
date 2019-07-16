@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    app:cardMaxElevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_blue"
+            android:padding="10dp"
+            android:text="@string/profile_address_string"
+            android:textAlignment="center"
+            android:textColor="@color/app_white"
+            android:textSize="@dimen/extra_large" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/cart_address_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/profile_add_name_string"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPersonName"
+                    android:textColorHint="@color/app_hint" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/cart_address_mbl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/profile_add_mobile_string"
+                    android:imeOptions="actionDone"
+                    android:inputType="phone"
+                    android:textColorHint="@color/app_hint" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/cart_address_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/profile_add_address_string"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPostalAddress"
+                    android:textColorHint="@color/app_hint" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/cart_address_village"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/cart_village_string"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPostalAddress"
+                    android:textColorHint="@color/app_hint" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/cart_address_landmark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/cart_near_string"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPostalAddress"
+                    android:textColorHint="@color/app_hint" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/cart_address_division"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                app:ms_arrowColor="@color/app_blue"
+                app:ms_baseColor="@color/app_hint"
+                app:ms_enableErrorLabel="false"
+                app:ms_enableFloatingLabel="false"
+                app:ms_floatingLabelColor="@color/app_hint"
+                app:ms_floatingLabelText="@string/cart_division_string"
+                app:ms_hint="@string/cart_division_string"
+                app:ms_hintColor="@color/app_hint"
+                app:ms_multiline="false" />
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/cart_address_zilla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                app:ms_arrowColor="@color/app_blue"
+                app:ms_baseColor="@color/app_hint"
+                app:ms_enableErrorLabel="false"
+                app:ms_enableFloatingLabel="false"
+                app:ms_floatingLabelColor="@color/app_hint"
+                app:ms_floatingLabelText="@string/cart_zilla_string"
+                app:ms_hint="@string/cart_zilla_string"
+                app:ms_hintColor="@color/app_hint"
+                app:ms_multiline="false" />
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/cart_address_upozilla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                app:ms_arrowColor="@color/app_blue"
+                app:ms_baseColor="@color/app_hint"
+                app:ms_enableErrorLabel="false"
+                app:ms_enableFloatingLabel="false"
+                app:ms_floatingLabelColor="@color/app_hint"
+                app:ms_floatingLabelText="@string/cart_upozilla_string"
+                app:ms_hint="@string/cart_upozilla_string"
+                app:ms_hintColor="@color/app_hint"
+                app:ms_multiline="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:paddingBottom="10dp">
+
+            <Button
+                android:id="@+id/cart_address_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/app_white"
+                android:gravity="end"
+                android:padding="5dp"
+                android:text="@string/cancel_string"
+                android:textAlignment="center"
+                android:textColor="@color/app_blue"
+                android:textSize="@dimen/extra_large" />
+
+            <Button
+                android:id="@+id/cart_address_add"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:background="@color/app_blue"
+                android:gravity="end"
+                android:padding="5dp"
+                android:text="@string/forget_button_hint"
+                android:textAlignment="center"
+                android:textColor="@color/app_white"
+                android:textSize="@dimen/extra_large" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

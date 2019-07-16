@@ -1,0 +1,201 @@
+<resources>
+    <string name="app_name">FishBangla</string>
+    <string name="splash_text">মাছ কিনুন ঘরে বসে </string>
+    <string name="homepage_retail_string">খুচরা</string>
+    <string name="homepage_rdyck_string">রেডি কুক</string>
+    <string name="homepage_frozen_string">ফ্রোজেন</string>
+    <string name="homepage_wholesale_string">পাইকারি</string>
+    <string name="homepage_wholesale_auction_string">পাইকারি(নিলাম)</string>
+    <string name="homepage_registration_string">Reg</string>
+    <string name="homepage_login_string">লগ ইন</string>
+    <string name="homepage_search_string">এখানে অনুসন্ধান করুন</string>
+    <string name="user_buyer_string">ক্রেতা</string>
+    <string name="user_eller_string">বিক্রেতা</string>
+    <string name="user_both_string">উভয়</string>
+    <string name="user_question_string">আপনি কি ?</string>
+    <string name="mobile_number_string">01X XXXXXXXX</string>
+
+    <string name="next_string">পরবর্তী</string>
+    <string name="skip_string">Skip</string>
+    <string name="yes_string">হ্যাঁ</string>
+    <string name="no_string">না</string>
+    <string name="ok_string">ঠিক আছে</string>
+    <string name="no_internet_string">আপনার ইন্টারনেট সংযোগ পরীক্ষা করুন</string>
+    <string name="something_went_string">something went wrong</string>
+    <string name="try_again_string">পরে আবার চেষ্টা করুন</string>
+    <string name="validation_string">সব তথ্য পূরণ করুন</string>
+    <string name="time_string">ঘন্টা</string>
+    <string name="taka_string">টাকা</string>
+    <string name="sure_string">নিশ্চিত করুন</string>
+    <string name="zero_string">০</string>
+    <string name="no_data_string">No Data Available</string>
+    <string name="cancel_string">বাতিল</string>
+    <string name="unit_string">৳/কেজি</string>
+    <string name="kg_string">কেজি</string>
+    <string name="confirm_string">অনুমোদন</string>
+    <string name="confirm_question_string">আপনি কি নিশ্চিত?</string>
+    <!--Login Page-->
+    <string name="login_email_string">মোবাইল নম্বর লিখুন</string>
+    <string name="login_password_string">আপনার পিন লিখুন</string>
+    <string name="login_remember_string">Remember Me</string>
+    <string name="login_forgot_string">পাসওয়ার্ড ভুলে গেছেন?</string>
+    <string name="login_log_string">প্রবেশ</string>
+    <string name="login_registration_string">অ্যাকাউন্ট নাই? নিবন্ধন করুন</string>
+    <string name="login_reg_string">Create An Account</string>
+    <string name="login_invalid_string">ব্যবহারকারী বা পাসওয়ার্ড ভুল</string>
+
+
+    <!--REgistration-->
+    <!-- Registration Page string -->
+    <string name="registration_username_hint">সম্পূর্ণ নাম লিখুন</string>
+    <string name="registration_email_hint">ইমেইল অ্যাড্রেস দিন</string>
+    <string name="registration_pincode_string">এসএমএস কোডটি লিখুন</string>
+    <string name="registration_verify_string">যাচাই</string>
+    <string name="registration_password_hint">Enter Password</string>
+    <string name="registration_confirm_password_hint">Enter Confirm Password</string>
+    <string name="registration_buyer_reference_string">ক্রেতা রেফারেন্স কোড (যদি থাকে)</string>
+    <string name="registration_seller_reference_string">বিক্রেতা রেফারেন্স কোড (যদি থাকে)</string>
+    <string name="registration_button_string">নিবন্ধন</string>
+    <string name="registration_login_button_string">আপনি অ্যাকাউন্ট আছে? এখানে লগইন করুন</string>
+    <string name="registration_pin_success_string">পিন আর জন্য অপেক্ষা করুন</string>
+
+    <!-- Forget Page string -->
+    <string name="forget_button_hint">জমা দিন</string>
+    <string name="forget_title_hint">পিন রিসেট করার জন্য, মোবাইল নম্বর লিখুন</string>
+    <string name="title_activity_home_page">Home_page</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_sell">বিক্রি করুন</string>
+    <string name="menu_profile">প্রোফাইল</string>
+    <string name="menu_settings">সেটিং</string>
+    <string name="menu_order">অর্ডার</string>
+    <string name="menu_referel">রেফারেল</string>
+    <string name="menu_buy_history">ক্রয় ইতিহাস</string>
+    <string name="menu_sell_history">বিক্রয় ইতিহাস</string>
+    <string name="menu_logout">লগ আউট</string>
+
+    <string name="fish_list_price_string">Price</string>
+    <string name="fish_location_price">Location</string>
+    <string name="fish_category_price">Category</string>
+
+    <string name="seller_profile_rate_string">Rate Seller</string>
+    <string name="seller_profile_title_string">Seller Ratting : </string>
+    <string name="seller_profile_title_rate_string"> 3.5</string>
+    <string name="seller_profile_review_string">Write a review..</string>
+
+    <string name="profile_name_string">নাম : </string>
+    <string name="profile_email_string">ইমেইল : </string>
+    <string name="profile_phone_string">মোবাইল : </string>
+    <string name="profile_dob_string">জন্ম তারিখ : </string>
+    <string name="profile_sex_string">লিঙ্গ : </string>
+    <string name="profile_mor_string">More+</string>
+    <string name="profile_product_string">Product List</string>
+    <string name="profile_address_string">ঠিকানা</string>
+    <string name="profile_add_mor_string">যোগ করুন</string>
+    <string name="profile_add_name_string">নাম</string>
+    <string name="profile_add_mobile_string">মোবাইল নাম্বার নম্বর</string>
+    <string name="profile_add_address_string">ঠিকানা</string>
+    <string name="profile_add_zilla_string">জেলা,বিভাগ</string>
+    <string name="profile_image_upload_string">প্রোফাইল ছবি পরিবর্তন সফল ভাবে সম্পন্ন হয়েছে</string>
+
+    <string name="history_name_string">ফিশ নাম</string>
+    <string name="history_price_string">মূল্য</string>
+    <string name="history_unit_string">কেজি</string>
+    <string name="history_time_string">বিক্রয়ের সময়</string>
+
+    <string name="step1_fish_string">মাছ নির্বাচন করুন</string>
+    <string name="step1_description_string">মাছের বিবরণ</string>
+    <string name="step1_category_string">মাছের বিভাগ</string>
+    <string name="step1_price_string">মাছের দাম</string>
+    <string name="step1_quantity_string">মাছের পরিমাণ</string>
+    <string name="step1_minimum_quantity_string">সর্বনিম্ন পরিমাণ</string>
+    <string name="step1_upozila_string">উপজেলা নির্বাচন করুন</string>
+    <string name="step1_sell_type_string">বিক্রয় টাইপ?</string>
+    <string name="step1_frozen_string">হিমায়িত?</string>
+
+    <string name="step2_picture_string">ছবি হালনাগাদ করুন</string>
+    <string name="step3_video_string">ভিডিও হালনাগাদ করুন</string>
+
+    <string name="step1_string">প্রথম ধাপ</string>
+    <string name="step2_string">দ্বিতীয় ধাপ</string>
+    <string name="step3_string">তৃতীয় ধাপ</string>
+    <string name="step4_string">চতুর্থ ধাপ</string>
+
+    <string name="auction_string">নিলাম</string>
+    <string name="auction_apply_string">নিলামে অংশ নিন</string>
+    <string name="auction_time_string">সময় বাকি</string>
+    <string name="auction_max_price_string">সর্বোচ্চ দর</string>
+    <string name="auction_confirm_string">আপনার দরটি নিশ্চিত\n করা হয়েছে।\n আপনি সর্বোচ্চ দরদাতা হলে\n আপনাকে কল করা হবে</string>
+    <string name="auction_again_string">নতুন দর দিন</string>
+
+    <!--CART STRING-->
+    <string name="cart_title_string">আপনার যোগকৃত পণ্য</string>
+    <string name="cart_image_string">ছবি</string>
+    <string name="cart_quantity_string">পরিমান</string>
+    <string name="cart_checkout_string">চেকআউট</string>
+    <string name="cart_service_string">সার্ভিস চার্জ</string>
+    <string name="cart_vat_string">ভ্যাট</string>
+    <string name="cart_delivery_string">ডেলিভারি চার্জ</string>
+    <string name="cart_sum_string">সর্বমোট</string>
+    <string name="cart_sum_without_string">মোট</string>
+    <string name="cart_empty_string">আপনার কার্ট খালি</string>
+    <string name="cart_name_string">মাছের নাম</string>
+    <string name="cart_price_string">দাম</string>
+
+    <!--CART address-->
+    <string name="cart_village_string">গ্রাম</string>
+    <string name="cart_near_string">কাছাকাছি ল্যান্ডমার্ক</string>
+    <string name="cart_upozilla_string">উপজেলা</string>
+    <string name="cart_zilla_string">জেলা</string>
+    <string name="cart_division_string">বিভাগ</string>
+    <!--<string name="cart_near_string">কাছাকাছি ল্যান্ডমার্ক</string>-->
+    <string name="cart_address_success_string">আপনার ঠিকানা যোগ করা হয়েছে</string>
+
+    <!--payment String-->
+    <string name="payment_title_string">আপনার যোগকৃত পণ্য</string>
+    <string name="payment_cod_string">ক্যাশ অন ডেলিভারি</string>
+    <string name="payment_online_string">অনলাইন পেমেন্ট(আসন্ন)</string>
+    <string name="payment_bkash_string">বিকাশ(আসন্ন)</string>
+    <string name="payment_voucher_string">প্রমোশন কোড</string>
+    <string name="payment_voucher_apply_string">আবেদন</string>
+    <string name="payment_order_apply_string">অর্ডার করুন</string>
+    <string name="payment_no_pay_string">অন্য পেমেন্ট মেথড সিলেক্ট করুন</string>
+    <string name="payment_succes_string">আপনার অর্ডার সফল ভাবে সম্পন্ন হয়েছে </string>
+
+    <string name="seller_rating_success_string">আপনার রেটিং যোগ করা হয়েছে</string>
+
+    <string name="product_succes_string">আপনার পণ্যটি যোগ করা হয়েছে</string>
+
+
+    <string name="bdt_sign">৳</string>
+    <string name="image_base_url">http://120.50.15.44:5050/content/</string>
+
+    <string name="one">১</string>
+    <string name="two">২</string>
+    <string name="three">৩</string>
+    <string name="four">৪</string>
+    <string name="five">৫</string>
+    <string name="six">৬</string>
+    <string name="seven">৭</string>
+    <string name="eight">৮</string>
+    <string name="nine">৯</string>
+    <string name="zero">০</string>
+
+    <string name="fish_details_reference_string">আরো অন্যান্য মাছ সমূহ</string>
+
+    <string name="update_profile_male_string">ছেলে</string>
+    <string name="update_profile_female_string">মেয়ে</string>
+    <string name="update_profile_string">প্রোফাইল পরিবর্তন করুন</string>
+
+    <string name="discount_invalid_string">ডিসকাউন্ট কোড সঠিক নয়</string>
+
+    <string name="title_address_string">ঠিকানা পছন্দ করুন</string>
+    <string name="wholesale_fish_title_string">পাইকারি মাছ</string>
+
+
+</resources>
